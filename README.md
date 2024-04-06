@@ -40,7 +40,9 @@ This Python script automates the process of scraping Douyin video links from a u
 In the main(), configure those variables:
 douyin_user_link: pass in the link to douyin profile
 x: get the top x% most viewed videos on that profile
-
+Trong main(), hãy định cấu hình các biến đó:
+douyin_user_link: chuyển link tới hồ sơ douyin
+x: lấy x% video được xem nhiều nhất trên hồ sơ đó
 **Notes**
 
 - This script interacts with external websites (Douyin, Snaptik) that may change their structure or behavior over time. You might need to adjust the code accordingly if these websites update their layouts.
@@ -49,7 +51,7 @@ x: get the top x% most viewed videos on that profile
 
 **Disclaimer**
 
-This script is provided for educational purposes only. Use it responsibly and in accordance with applicable terms of service and copyright laws. The author is not responsible for any misuse or consequences of using this script.
+This script is provided for personal purposes only. Use it responsibly and in accordance with applicable terms of service and copyright laws. The author is not responsible for any misuse or consequences of using this script.
 
 **Additional Considerations**
 
