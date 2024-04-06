@@ -23,17 +23,23 @@ This Python script automates the process of scraping Douyin video links from a u
 
 **Usage**
 
-1. **Configure Paths (Optional):**
+1. **Configure Paths:**
 
    - Modify the script to set the following paths as needed:
      - `path_to_profile_chrome`: Path to your Chrome profile directory (if not using default)
-     - `download_path`: Path for downloaded Douyin videos
+**     -    How to take the profile_path:
+**     -    go to chrome://version/ on your Chrome browser, you will see the profile path field
+
+     
 
 2. **Run the Script:**
 
    ```bash
-   python your_script_name.py
+   python douyin_crawler.py
    ```
+In the main(), configure those variables:
+douyin_user_link: pass in the link to douyin profile
+x: get the top x% most viewed videos on that profile
 
 **Notes**
 
