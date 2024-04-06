@@ -55,7 +55,7 @@ def launch_chrome_profile(profile_path = path_to_profile_chrome, profile = 'Prof
             chrome_options.add_argument('--disk-cache-size=0')
             # Set Chrome preferences
             prefs = {"profile.default_content_settings.popups": 0,
-                    "download.default_directory": download_path,
+                    "download.default_directory": r"D:\\",
                     "download.directory_upgrade": True,}
 
             chrome_options.add_experimental_option("prefs", prefs)
@@ -79,7 +79,7 @@ def crawl_domtree(douyin_user_link): #=> return the domtree.txt file
         driver.execute_script('window.scrollTo(0, document.body.scrollHeight)')
         sleep(3)
     sleep(random.uniform(10,20))
-    dom_tree = = driver.execute_script('return document.documentElement.outerHTML')
+    dom_tree  = driver.execute_script('return document.documentElement.outerHTML')
 
     return dom_tree
 def download_link(link, download_page ='https://snaptik.app/en/douyin-downloader'):
@@ -105,7 +105,7 @@ def download_link(link, download_page ='https://snaptik.app/en/douyin-downloader
                 print(f"\nGiving up after 2 failed attempts.\n{link}\n")
 
 if "__name__"=="__main__":
-    douyin_user_link = "https://www.douyin.com/user/MS4wLjABAAAAuwV3CZZJPU5nBKBc9gPzouVO2tsfHNuaaWh9PqeqPqK9oiWf0dJrQCK26MJr4DOd?relation=0&vid=7311331250793467187"
+    douyin_user_link = "https://www.douyin.com/user/MS4wLjABAAAAuwV3CZZJPU5nBKBc9gPzouVO2tsfHNuaaWh9PqeqPqK9oiWf0dJrQCK26MJr4DOd"
     driver = None
     for douyin_user_link in douyin_user_links:
     dom_tree = crawl_domtree(douyin_user_link)
