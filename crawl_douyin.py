@@ -1,11 +1,3 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from time import sleep
-from selenium.webdriver.chrome.service import Service
-import os
-import re
-from selenium import webdriver
-from selenium.webdriver.common.by import By
 import random
 import re
 from selenium import webdriver
